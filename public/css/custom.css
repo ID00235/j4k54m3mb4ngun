@@ -1,0 +1,36 @@
+.text-line{
+	border-bottom: 1px dotted #999;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+}
+
+error{
+	color:  #940d34 ;
+}
+sukses{
+	color:  #138746 ;
+}
+
+
+#bs-example-navbar-collapse-1{
+	background:  #fff ;
+}
+
+
+.btn-primary {
+    border-color: #0A7342 !important;
+    background-color: #056839 !important;
+    transition: all .2s ease-in-out;
+}
+.btn-primary:hover{
+	background-color: #0E7537 !important;
+	border-color: #1CA666 !important;
+}
+
+@media (min-width: 600px) {
+	div.polaroid-right {
+	    -webkit-box-shadow: 1px 0px 3px 0px rgba(105,102,105,0.65);
+		-moz-box-shadow: 1px 0px 3px 0px rgba(105,102,105,0.65);
+		box-shadow: 1px 0px 3px 0px rgba(105,102,105,0.65);
+	}
+}

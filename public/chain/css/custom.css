@@ -1,0 +1,40 @@
+.yellow{
+	color:#FEDD14 !important;
+}
+
+h5{
+	font-size: 1.5em;
+}
+.panel-default{
+	border-color:  #b0cacf ;
+	border-top:16px solid  #b0cacf  ;
+}
+
+.title{
+	font-size: 1.25em;
+	color: #056839;
+	display:block;
+	border-bottom: 1px solid #efefef;
+	padding-bottom: 6px;
+	margin-bottom: 15px;
+}
+
+.label{
+	font-size: 1em;
+	color: #576b68;
+	display:block;
+	margin-bottom: 10px;
+}
+
+tr > td.warning{
+	background:    #FFC300  !important;
+	color: white;
+}
+tr > td.danger{
+	background:   #e11b00   !important ;
+	color: white;
+}
+tr > td.success{
+	background:  #1ac65b  !important ;
+	color: white;
+}
