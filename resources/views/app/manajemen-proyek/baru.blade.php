@@ -166,7 +166,6 @@
 		    	$("#autocomplete-konsultan-status").removeClass('la-ellipsis-h')
 		    },
 		    onSelect: function(suggestion){
-		    	alert(suggestion.data);
 		    	$("#autocomplete-konsultan-status").removeClass('la-search');
 		    	$("#autocomplete-konsultan-status").addClass('la-check');
 		    }

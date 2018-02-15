@@ -12,6 +12,7 @@
         <link href="{{asset('css/select2.min.css')}}" rel="stylesheet">
         <link href="{{asset('css/select2-bootstrap.min.css')}}" rel="stylesheet">
         <link href="{{asset('css/bootstrap-datepicker3.standalone.css')}}" rel="stylesheet">
+        <link href="{{asset('css/bootstrap-datetimepicker.css')}}" rel="stylesheet">
     </head>
 
     <body>
@@ -102,11 +103,13 @@
         <script src="{{asset('js/select2.min.js')}}"></script>
         <script src="{{asset('js/jquery.mask.min.js')}}"></script>
         <script src="{{asset('js/jquery.autocomplete.min.js')}}"></script>
+        <script src="{{asset('js/moment-with-locales.js')}}"></script>
+        <script src="{{asset('js/bootstrap-datetimepicker.js')}}"></script>
 
         <script type="text/javascript">
             $(function(){
                 $(".select2").select2({theme: "bootstrap"});
-                $('.datepicker').mask("0000-00-00");
+                $('.datepicker').datetimepicker({format : "DD/MM/YYYY"});("00-00-0000");
             })
         </script>
         @section('javascript')

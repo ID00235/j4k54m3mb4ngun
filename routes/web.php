@@ -37,6 +37,7 @@ Route::group(['middleware'=>'auth'], function(){
 	//autocomplete
 	Route::group(['prefix'=>'autocomplete'], function(){
 		Route::get('/rekanan', 'AutoCompeleteController@rekanan');
+		Route::get('/konsultan', 'AutoCompeleteController@konsultan');
 	});
 	
 });
