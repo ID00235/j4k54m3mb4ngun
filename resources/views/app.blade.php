@@ -10,6 +10,7 @@
         <link href="{{asset('chain/css/style.default.css')}}" rel="stylesheet">
         <link href="{{asset('plugins/line-awesome/css/line-awesome.min.css')}}" rel="stylesheet">
         <link href="{{asset('css/select2.min.css')}}" rel="stylesheet">
+        <link href="{{asset('css/app-custom.css')}}" rel="stylesheet">
         <link href="{{asset('css/select2-bootstrap.min.css')}}" rel="stylesheet">
         <link href="{{asset('css/bootstrap-datepicker3.standalone.css')}}" rel="stylesheet">
         <link href="{{asset('css/bootstrap-datetimepicker.css')}}" rel="stylesheet">
@@ -105,11 +106,23 @@
         <script src="{{asset('js/jquery.autocomplete.min.js')}}"></script>
         <script src="{{asset('js/moment-with-locales.js')}}"></script>
         <script src="{{asset('js/bootstrap-datetimepicker.js')}}"></script>
+        <script src="{{asset('js/jquery.maskmoney.js')}}"></script>
+        <script src="{{asset('js/jquery.validation.js')}}"></script>
+        <script src="{{asset('plugins/bootbox/bootbox.min.js')}}"></script>
 
         <script type="text/javascript">
             $(function(){
                 $(".select2").select2({theme: "bootstrap"});
                 $('.datepicker').datetimepicker({format : "DD/MM/YYYY"});("00-00-0000");
+                $(".money").maskMoney({prefix:'Rp ', allowNegative: false, thousands:'.',decimal:',',precision:0});
+
+                jQuery.extend(jQuery.validator.messages, {
+                    required: "Field Ini Harus Diisi.",
+                    email: "Alamat Email Harus Benar.",
+                    number: "Masukan Karakter Numerik(Angka) Saja.",
+                    min:"Field Ini Harus Diisi",
+                    minlength:"Isian Field Minimal {0} Karakter"
+                });
             })
         </script>
         @section('javascript')

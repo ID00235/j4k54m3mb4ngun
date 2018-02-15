@@ -30,6 +30,7 @@ Route::group(['middleware'=>'auth'], function(){
 		Route::group(['prefix'=>'manajemen-proyek'], function(){
 			Route::get('/', 'ManajemenProyekController@index');
 			Route::get('/baru', 'ManajemenProyekController@baru');
+			Route::post('/submit-baru', 'ManajemenProyekController@submit_baru');
 		});
 
 	});
